@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../public/style/tasks-styles.css" />
+  <link rel="stylesheet" href="../public/style/home-styles.css" />
+  <title>DEC- Tasks</title>
+</head>
+
+<body class="full-height-grow">
+  <div class="container full-height-grow">
+    <header class="main-header">
+      <a class="brand-logo">
+        <img src="../public/assets/Ecell-LOGO-01.png" />
+        <div class="brand-logo-name">DEC</div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/users/homeboard">Home</a></li>
+          <li><a href="/users/dashboard">Dashboard</a></li>
+          <li><a href="/users/logout">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="tasks-main-section">
+      <div class="task-count">
+        <h1 class="task-number">
+          Task <span class="accent-text-stroke"><%= task_number %></span>
+        </h1>
+      </div>
+      <div class="task-deadline-container">
+        <h3 class="task-deadline">Deadline: <%= deadline %></h3>
+      </div>
+      <div class="points-container">
+        <h3 class="task-points">Points : <%= points %></h3>
+      </div>
+      <div class="task-title-container">
+        <h2 class="task-title coves-font">
+          <%= subtext %>
+        </h2>
+      </div>
+      <div class="task-details">
+        <h3 class="description-title coves-font">Description</h3>
+        <h4 class="task-description-text coves-font task-info">
+          <%= description %>
+        </h4>
+        <h3 class="description-title coves-font">Guidelines</h3>
+        <h4 class="task-guidelines-text coves-font task-info">
+          <%= guidelines %>
+        </h4>
+        <h3 class="description-title coves-font">Submission Guidelines</h3>
+        <h4 class="task-submission-text coves-font task-info">
+          <%= submission %>
+        </h4>
+        <div class="button-container">
+          <button type="submit" class="submit-button">Submit Files</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

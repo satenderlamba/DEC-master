@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../public/style/home-styles.css" />
+  <link href="../public/style/login-styles.css" rel="stylesheet" />
+  <title>DEC- Login</title>
+</head>
+
+<body class="full-height-grow">
+  <div class="container full-height-grow">
+    <header class="main-header">
+      <a class="brand-logo">
+        <img src="../public/assets/Ecell-LOGO-01.png" />
+        <div class="brand-logo-name">DEC</div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="/users/register">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="login-main-section">
+      <h1 class="login-text">
+        Log
+        <span class="accent-text">in.</span>
+      </h1>
+      <form action="/users/login" method="POST" class="login-form">
+        <div class="input-group email">
+          <label>Email or Phone:</label>
+          <input type="email" id="email" name="email"/>
+        </div>
+        <div class="input-group">
+          <label>Password:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div class="input-group">
+          <button type="submit" class="btn">Login</button>
+        </div>
+        <div class="input-group-last">
+          <a href="/users/forgotpassword" style=" color: inherit; text-decoration: none;"
+            class="forgot-button"><label>Forgot Password?</label></a>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>
